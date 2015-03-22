@@ -1,0 +1,7 @@
+[push]
+	default = simple
+[color]
+	ui = true
+[user]
+	name = Zach Donovan
+	email = zach@zachdonovan.net
