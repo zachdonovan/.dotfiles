@@ -15,3 +15,7 @@ alias gl="git log"
 alias gf="git fetch"
 alias grom="git rebase origin/master"
 alias g="git"
+
+# UNIX
+alias ls='ls -Gfh'
+

@@ -1,6 +1,4 @@
 source ~/.bash_aliases
-alias ls='ls -Gfh'
-alias ctags='/usr/local/bin/ctags'
 PS1='(\A) \h:\W \u\$ '
 
 # add work and personal SSH keys
