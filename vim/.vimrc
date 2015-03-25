@@ -55,4 +55,17 @@ set incsearch                           " search as characters are entered
 
 set hlsearch                            " highlight terms matching search
 
+" HOUSECLEANING
 
+set viminfo+=n~/.vim/info               " store viminfo file inside the .vim dir
+
+set backupdir=~/.vim/backups//           " store backups inside the .vim dir
+set backup
+
+set dir=~/.vim/swap//                   " store swapfiles in the .vim dir (see a pattern here?)
+set directory
+
+set undodir=~/.vim/undo//               " store undofiles in the .vim dir (surprise!)
+set undofile
+
+set viewdir=~/.vim/views//              " store view files in the .vim dir

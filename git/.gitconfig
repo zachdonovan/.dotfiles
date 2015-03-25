@@ -5,3 +5,5 @@
 [user]
 	name = Zach Donovan
 	email = zach@zachdonovan.net
+[core]
+	editor = /usr/bin/vim
