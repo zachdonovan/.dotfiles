@@ -39,7 +39,7 @@ set number                              " show line numbers
 
 set showcmd                             " shows the last command run
 
-filetype plugin indent on              " track filetype and use format-specific plug/in/dents
+filetype plugin indent on               " track filetype and use format-specific plug/in/dents
 
 set wildmenu                            " visual autocomplete for vim commands
 
@@ -63,7 +63,6 @@ set backupdir=~/.vim/backups//           " store backups inside the .vim dir
 set backup
 
 set dir=~/.vim/swap//                   " store swapfiles in the .vim dir (see a pattern here?)
-set directory
 
 set undodir=~/.vim/undo//               " store undofiles in the .vim dir (surprise!)
 set undofile
