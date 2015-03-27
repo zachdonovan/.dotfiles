@@ -1,6 +1,11 @@
 " a basic vimrc
 " heavily influenced by http://dougblack.io/words/a-good-vimrc.html
 
+" GENERAL
+
+let mapleader = ","
+let g:mapleader = ","
+
 " VUNDLE
 set nocompatible                        " be iMproved, required
 filetype off                            " required for vundle config
