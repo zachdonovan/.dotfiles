@@ -7,6 +7,7 @@ let mapleader = ","
 let g:mapleader = ","
 
 " VUNDLE
+
 set nocompatible                        " be iMproved, required
 filetype off                            " required for vundle config
 
@@ -54,6 +55,8 @@ set showmatch                           " highlight matching [{()}]
 
 set ruler                               " show row/column nums and document pct
 
+set nowrap                              " don't wrap lines that don't fit
+
 " SEARCH
 
 set incsearch                           " search as characters are entered
@@ -73,3 +76,16 @@ set undodir=~/.vim/undo//               " store undofiles in the .vim dir (surpr
 set undofile
 
 set viewdir=~/.vim/views//              " store view files in the .vim dir
+
+" OCAML
+
+" Vim needs to be built with Python scripting support, and must be
+" able to find Merlin's executable on PATH.
+if executable('ocamlmerlin') && has('python')
+  let s:ocamlmerlin = substitute(system('opam config var share'), '\n$', '', '''') . "/ocamlmerlin"
+  execute "set rtp+=".s:ocamlmerlin."/vim"
+  execute "set rtp+=".s:ocamlmerlin."/vimbufsync"
+endif
+
+" turn on ocp-indent for ocaml
+autocmd FileType ocaml source substitute(system('opam config var share'), '\n$', '', '''') . "/typerex/ocp-indent/ocp-indent.vim"
