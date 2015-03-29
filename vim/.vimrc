@@ -87,5 +87,5 @@ if executable('ocamlmerlin') && has('python')
   execute "set rtp+=".s:ocamlmerlin."/vimbufsync"
 endif
 
-" turn on ocp-indent for ocaml
-autocmd FileType ocaml source substitute(system('opam config var share'), '\n$', '', '''') . "/typerex/ocp-indent/ocp-indent.vim"
+" turn on ocp-indent for ocaml -- NOT WORKING
+" autocmd FileType ocaml source substitute(system('opam config var share'), '\n$', '', '''') . "/typerex/ocp-indent/ocp-indent.vim"
