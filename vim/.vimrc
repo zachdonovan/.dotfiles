@@ -17,6 +17,7 @@ call vundle#begin()                     " all plugins must be ref'd btwn here an
 Plugin 'gmarik/Vundle.vim'              " let vundle manage itself (req'd)
 Plugin 'altercation/vim-colors-solarized' " solarized color scheme (shit in tmux)
 Plugin 'tomasr/molokai'                 " molokai color scheme
+Plugin 'rust-lang/rust.vim'             " add rust language support
 
 call vundle#end()                       " all plugins must be ref'd before this point
 
