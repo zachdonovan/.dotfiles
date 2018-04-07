@@ -1,5 +1,6 @@
 vim/.vim/backups/
-vim/.vim/views/
+vim/.vim/swap/
 vim/.vim/undo/
+vim/.vim/views/
 vim/.vim/info
 vim/.vim/.netrwhist
